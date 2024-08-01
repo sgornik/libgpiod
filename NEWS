@@ -2,6 +2,18 @@
 # SPDX-FileCopyrightText: 2017-2021 Bartosz Golaszewski <bartekgola@gmail.com>
 # SPDX-FileCopyrightText: 2023 Bartosz Golaszewski <bartosz.golaszewski@linaro.org>
 
+libgpiod v2.1.3
+===============
+
+Bug fixes:
+- fix C++ tests with recent kernels which introduced stricter reconfigure
+  behavior
+- fix a use-after-free bug in python bindings
+- fix passing the event clock property to line requests in python bindings
+- fix a memory leak in tools
+- make sure the string buffers in line-info and chip-info are big enough to not
+  truncate the strings they hold below the size accepted by the kernel
+
 libgpiod v2.1.2
 ===============
 
